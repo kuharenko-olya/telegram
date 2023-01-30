@@ -1,0 +1,75 @@
+.wrapper {
+  display: flex; }
+  .wrapper .aside {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 100vh;
+    background-color: #17212b; }
+    .wrapper .aside .aside-header {
+      display: flex;
+      flex-direction: row;
+      padding: 10px; }
+      .wrapper .aside .aside-header .wrapper {
+        display: flex; }
+        .wrapper .aside .aside-header .wrapper .burger-icon {
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          padding-right: 12px; }
+          .wrapper .aside .aside-header .wrapper .burger-icon .burger-item {
+            width: 27px;
+            height: 2px;
+            background-color: #58646e;
+            margin: 4px 0px; }
+        .wrapper .aside .aside-header .wrapper .input-search {
+          background-color: #242f3d;
+          color: #fff;
+          padding: 5px 10px;
+          width: 295px;
+          border-radius: 5px; }
+    .wrapper .aside .chat {
+      padding: 15px 5px; }
+      .wrapper .aside .chat .user {
+        display: flex;
+        flex-direction: row; }
+        .wrapper .aside .chat .user .avatar {
+          margin-right: 15px; }
+          .wrapper .aside .chat .user .avatar img {
+            width: 40px;
+            height: auto;
+            border-radius: 22px; }
+        .wrapper .aside .chat .user .name {
+          color: #fff; }
+  .wrapper .container {
+    width: 100%; }
+    .wrapper .container .main {
+      background-color: #0e1621;
+      height: 100vh; }
+      .wrapper .container .main .block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 400px; }
+      .wrapper .container .main .border {
+        width: 245px;
+        background-color: #1e2c3a;
+        border-radius: 15px;
+        padding: 5px 0px; }
+        .wrapper .container .main .border .info {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 600;
+          text-align: center; }
+
+body {
+  margin: 0;
+  font-family: sans-serif; }
+
+p {
+  margin: 0; }
+
+input {
+  border: none; }
+  input:focus {
+    outline: none; }
