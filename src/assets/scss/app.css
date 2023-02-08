@@ -28,39 +28,127 @@
           padding: 5px 10px;
           width: 295px;
           border-radius: 5px; }
-    .wrapper .aside .chat {
-      padding: 15px 5px; }
-      .wrapper .aside .chat .user {
+    .wrapper .aside #chats {
+      padding: 15px 5px;
+      overflow: auto; }
+      .wrapper .aside #chats .user {
         display: flex;
-        flex-direction: row; }
-        .wrapper .aside .chat .user .avatar {
+        flex-direction: row;
+        padding: 5px 0;
+        cursor: pointer; }
+        .wrapper .aside #chats .user .avatar {
           margin-right: 15px; }
-          .wrapper .aside .chat .user .avatar img {
+          .wrapper .aside #chats .user .avatar img {
             width: 40px;
             height: auto;
             border-radius: 22px; }
-        .wrapper .aside .chat .user .name {
+        .wrapper .aside #chats .user .name {
           color: #fff; }
+
+.wrapper {
+  display: flex; }
   .wrapper .container {
-    width: 100%; }
-    .wrapper .container .main {
+    width: 1530px; }
+    .wrapper .container #main {
       background-color: #0e1621;
-      height: 100vh; }
-      .wrapper .container .main .block {
+      height: 100vh;
+      display: block; }
+      .wrapper .container #main .block {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 400px; }
-      .wrapper .container .main .border {
+        height: 100%; }
+      .wrapper .container #main .border {
         width: 245px;
         background-color: #1e2c3a;
         border-radius: 15px;
         padding: 5px 0px; }
-        .wrapper .container .main .border .info {
+        .wrapper .container #main .border .info {
           color: #fff;
           font-size: 15px;
           font-weight: 600;
           text-align: center; }
+
+.chat-container {
+  background-color: #0e1621;
+  display: none; }
+  .chat-container .chat-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b262e;
+    margin-bottom: 20px;
+    padding: 10px 15px; }
+    .chat-container .chat-header .content {
+      display: flex;
+      flex-direction: column; }
+      .chat-container .chat-header .content .name {
+        color: #fff;
+        padding-bottom: 5px; }
+      .chat-container .chat-header .content .time {
+        font-size: 14px;
+        color: #475a68; }
+    .chat-container .chat-header .chat-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 120px;
+      align-items: center; }
+      .chat-container .chat-header .chat-icons .icon {
+        color: #5b6972;
+        font-size: 17px;
+        cursor: pointer; }
+      .chat-container .chat-header .chat-icons .sidebar-icon {
+        padding-top: 4px; }
+  .chat-container .chat-date {
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: darkgray;
+    margin: 0 auto; }
+    .chat-container .chat-date .month {
+      padding-right: 5px;
+      font-size: 15px; }
+    .chat-container .chat-date .date {
+      font-size: 15px; }
+  .chat-container .chat-content {
+    max-width: 400px;
+    padding: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    height: calc(100vh - 144px); }
+    .chat-container .chat-content .chat-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .chat-container .chat-content .chat-row .avatar {
+        padding-right: 20px; }
+        .chat-container .chat-content .chat-row .avatar img {
+          width: 40px;
+          height: 40px;
+          border-radius: 20px; }
+      .chat-container .chat-content .chat-row .message-content {
+        display: flex;
+        flex-direction: row;
+        background-color: darkgrey;
+        padding: 10px 15px;
+        border-radius: 20px;
+        width: 110px;
+        position: relative; }
+        .chat-container .chat-content .chat-row .message-content .time {
+          position: absolute;
+          right: 12px;
+          bottom: 5px;
+          font-size: 13px; }
+  .chat-container .input-message {
+    padding: 10px 0px;
+    background-color: antiquewhite;
+    width: 100%; }
 
 body {
   margin: 0;

@@ -1,0 +1,36 @@
+@import '../../vars/vars.scss';
+
+.wrapper {
+  display: flex;
+
+  .container {
+    width: 1530px;
+
+    #main {
+      background-color: $background-color-chat;
+      height: 100vh;
+      display: block;
+
+      .block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .border {
+        width: 245px;
+        background-color: #1e2c3a;
+        border-radius: 15px;
+        padding: 5px 0px;
+
+        .info {
+          color: $primary-color;
+          font-size: 15px;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

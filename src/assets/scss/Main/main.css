@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex; }
+  .wrapper .container {
+    width: 100%; }
+    .wrapper .container .main {
+      background-color: #0e1621;
+      height: 100vh; }
+      .wrapper .container .main .block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 400px; }
+      .wrapper .container .main .border {
+        width: 245px;
+        background-color: #1e2c3a;
+        border-radius: 15px;
+        padding: 5px 0px; }
+        .wrapper .container .main .border .info {
+          color: #fff;
+          font-size: 15px;
+          font-weight: 600;
+          text-align: center; }
