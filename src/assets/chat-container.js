@@ -1,5 +1,5 @@
 let users = document.querySelectorAll('#chats .user');
-let chatContainer = document.getElementsByClassName('chat-container')[0];
+let chatContainer = document.querySelector('.chat-container');
 let main = document.getElementById('main');
 
 

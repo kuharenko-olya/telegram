@@ -48,7 +48,7 @@
 .wrapper {
   display: flex; }
   .wrapper .container {
-    width: 1530px; }
+    width: 100%; }
     .wrapper .container #main {
       background-color: #0e1621;
       height: 100vh;
@@ -115,36 +115,40 @@
       font-size: 15px; }
     .chat-container .chat-date .date {
       font-size: 15px; }
-  .chat-container .chat-content {
+  .chat-container .chat-block {
     max-width: 400px;
     padding: 15px 0 0 15px;
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-    height: calc(100vh - 144px); }
-    .chat-container .chat-content .chat-row {
+    height: calc(100vh - 144px);
+    justify-content: flex-end; }
+    .chat-container .chat-block .chat-content {
       display: flex;
-      flex-direction: row;
-      align-items: center; }
-      .chat-container .chat-content .chat-row .avatar {
-        padding-right: 20px; }
-        .chat-container .chat-content .chat-row .avatar img {
+      flex-direction: column; }
+      .chat-container .chat-block .chat-content .message-block .message-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end; }
+        .chat-container .chat-block .chat-content .message-block .message-content .avatar img {
           width: 40px;
           height: 40px;
           border-radius: 20px; }
-      .chat-container .chat-content .chat-row .message-content {
-        display: flex;
-        flex-direction: row;
-        background-color: darkgrey;
-        padding: 10px 15px;
-        border-radius: 20px;
-        width: 110px;
-        position: relative; }
-        .chat-container .chat-content .chat-row .message-content .time {
-          position: absolute;
-          right: 12px;
-          bottom: 5px;
-          font-size: 13px; }
+        .chat-container .chat-block .chat-content .message-block .message-content .message-group {
+          display: flex;
+          flex-direction: column; }
+          .chat-container .chat-block .chat-content .message-block .message-content .message-group .message {
+            padding: 10px 15px;
+            border-radius: 20px;
+            width: 110px;
+            background: #242f3d;
+            display: flex;
+            position: relative; }
+            .chat-container .chat-block .chat-content .message-block .message-content .message-group .message .time {
+              position: absolute;
+              right: 12px;
+              bottom: 5px;
+              font-size: 13px; }
   .chat-container .input-message {
     padding: 10px 0px;
     background-color: antiquewhite;
